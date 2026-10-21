@@ -1,0 +1,35 @@
+name: Hourly collection
+
+# Calls the protected collection endpoint once an hour. Configure in the repo settings:
+#   Secrets   -> ADMIN_TOKEN  (same value as on Render)
+#   Variables -> API_BASE_URL (e.g. https://my-news-api.onrender.com, no trailing slash)
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: hourly-collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Wake the service (Render free instances sleep when idle)
+        run: |
+          curl --silent --show-error --retry 6 --retry-delay 20 --retry-all-errors --max-time 90 \
+            "${{ vars.API_BASE_URL }}/health"
+
+      - name: Trigger collection
+        env:
+          ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+        run: |
+          code=$(curl --silent --show-error --output result.json --write-out '%{http_code}' --max-time 600 \
+            -X POST -H "Authorization: Bearer $ADMIN_TOKEN" \
+            "${{ vars.API_BASE_URL }}/admin/collect?trigger=schedule")
+          python3 -c "import json; d=json.load(open('result.json')); print({k: d.get(k) for k in ('id','status','feeds_ok','feeds_failed','articles_new','stories_active','summaries_generated','ai_failures','error')})" || cat result.json
+          test "$code" = "200"
+          # A run whose every feed failed is recorded server-side; surface it as a failed workflow too.
+          python3 -c "import json,sys; sys.exit(json.load(open('result.json'))['status'] == 'failed')"

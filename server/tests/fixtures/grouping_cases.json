@@ -1,0 +1,174 @@
+{
+  "description": "Synthetic, hand-labelled grouping fixture (not real articles). 'group' is the expected story label; 'hours' is how long before the run the article was published. G1-G5 are multi-publisher stories. R1a is related to G1 (both earthquakes) and R2a is related to G2 (both central-bank rate decisions): they share vocabulary but must NOT be merged. S1/S2 are single-source stories that must be kept.",
+  "base_time": "2026-10-19T12:00:00Z",
+  "articles": [
+    {
+      "id": "g1-bbc",
+      "group": "G1",
+      "publisher": "bbc",
+      "hours": 0,
+      "title": "Magnitude 7.1 earthquake strikes off coast of Japan's Hokkaido",
+      "excerpt": "A powerful earthquake struck off Hokkaido in northern Japan, prompting tsunami warnings along the Pacific coast."
+    },
+    {
+      "id": "g1-npr",
+      "group": "G1",
+      "publisher": "npr",
+      "hours": 1,
+      "title": "Tsunami warning issued after strong quake hits northern Japan",
+      "excerpt": "Japan's meteorological agency said the earthquake near Hokkaido measured 7.1 and urged coastal residents to evacuate."
+    },
+    {
+      "id": "g1-aj",
+      "group": "G1",
+      "publisher": "aljazeera",
+      "hours": 3,
+      "title": "Japan lifts tsunami warning after Hokkaido earthquake",
+      "excerpt": "Officials in Japan lifted tsunami advisories for Hokkaido hours after the magnitude 7.1 earthquake damaged roads."
+    },
+    {
+      "id": "r1-cbs",
+      "group": "R1a",
+      "publisher": "cbs",
+      "hours": 5,
+      "title": "Earthquake of magnitude 6.4 shakes central Chile",
+      "excerpt": "A strong earthquake shook central Chile near Santiago, cutting power to thousands of homes, Chilean officials said."
+    },
+    {
+      "id": "r1-guardian",
+      "group": "R1a",
+      "publisher": "guardian",
+      "hours": 6,
+      "title": "Chile earthquake leaves thousands in Santiago without power",
+      "excerpt": "The 6.4 magnitude quake in Chile damaged buildings in Santiago and Valparaiso; no deaths were reported."
+    },
+    {
+      "id": "g2-nyt",
+      "group": "G2",
+      "publisher": "nyt",
+      "hours": 2,
+      "title": "Federal Reserve cuts interest rates by a quarter point",
+      "excerpt": "The Federal Reserve lowered its benchmark rate as Jerome Powell pointed to a cooling labor market and easing inflation."
+    },
+    {
+      "id": "g2-abc",
+      "group": "G2",
+      "publisher": "abc",
+      "hours": 3,
+      "title": "Powell says Fed will move carefully after rate cut",
+      "excerpt": "Fed Chair Jerome Powell said the Federal Reserve would watch inflation data closely after cutting interest rates."
+    },
+    {
+      "id": "g2-fox",
+      "group": "G2",
+      "publisher": "fox",
+      "hours": 4,
+      "title": "Fed's Powell defends rate cut as markets rally",
+      "excerpt": "Stocks rose after the Federal Reserve cut rates, with Powell saying inflation is moving toward the Fed's target."
+    },
+    {
+      "id": "r2-bbc",
+      "group": "R2a",
+      "publisher": "bbc",
+      "hours": 2,
+      "title": "European Central Bank holds interest rates steady",
+      "excerpt": "The European Central Bank kept rates unchanged, with Christine Lagarde warning that eurozone inflation remains sticky."
+    },
+    {
+      "id": "r2-aj",
+      "group": "R2a",
+      "publisher": "aljazeera",
+      "hours": 5,
+      "title": "Lagarde says ECB in no hurry to cut rates",
+      "excerpt": "ECB President Christine Lagarde said the European Central Bank would keep rates on hold while eurozone inflation cools."
+    },
+    {
+      "id": "g3-guardian",
+      "group": "G3",
+      "publisher": "guardian",
+      "hours": 8,
+      "title": "Wildfires force thousands to evacuate in southern California",
+      "excerpt": "Firefighters battled wind-driven wildfires near Los Angeles as California officials ordered evacuations."
+    },
+    {
+      "id": "g3-cbs",
+      "group": "G3",
+      "publisher": "cbs",
+      "hours": 9,
+      "title": "Los Angeles wildfire grows as Santa Ana winds intensify",
+      "excerpt": "The fire in Los Angeles County has burned 12,000 acres; California governor declares a state of emergency over the wildfires."
+    },
+    {
+      "id": "g3-npr",
+      "group": "G3",
+      "publisher": "npr",
+      "hours": 11,
+      "title": "California wildfires: evacuation orders expand near Los Angeles",
+      "excerpt": "More California residents were told to evacuate as wildfires spread across Los Angeles County in strong winds."
+    },
+    {
+      "id": "g4-bbc",
+      "group": "G4",
+      "publisher": "bbc",
+      "hours": 12,
+      "title": "Nasa's Artemis rocket launches crew toward the Moon",
+      "excerpt": "Nasa launched four astronauts on the Artemis mission from Florida, the first crewed flight around the Moon in decades."
+    },
+    {
+      "id": "g4-abc",
+      "group": "G4",
+      "publisher": "abc",
+      "hours": 13,
+      "title": "Artemis astronauts head for lunar flyby after Florida launch",
+      "excerpt": "The Artemis crew lifted off from Kennedy Space Center in Florida on Nasa's mission to fly around the Moon."
+    },
+    {
+      "id": "g4-fox",
+      "group": "G4",
+      "publisher": "fox",
+      "hours": 15,
+      "title": "Nasa says Artemis crew in good health on way to Moon",
+      "excerpt": "Nasa officials said the Artemis astronauts were healthy as the Orion spacecraft travelled toward the Moon."
+    },
+    {
+      "id": "g5-aj",
+      "group": "G5",
+      "publisher": "aljazeera",
+      "hours": 20,
+      "title": "Kenya and Ethiopia sign deal on Nile water sharing",
+      "excerpt": "Kenya and Ethiopia signed an agreement in Nairobi on sharing water from rivers feeding the Nile basin."
+    },
+    {
+      "id": "g5-guardian",
+      "group": "G5",
+      "publisher": "guardian",
+      "hours": 22,
+      "title": "Ethiopia and Kenya agree Nile basin water accord in Nairobi",
+      "excerpt": "Leaders from Ethiopia and Kenya met in Nairobi to sign the water agreement covering the Nile basin."
+    },
+    {
+      "id": "g5-npr",
+      "group": "G5",
+      "publisher": "npr",
+      "hours": 26,
+      "title": "Nairobi water deal between Kenya and Ethiopia welcomed by Egypt",
+      "excerpt": "Egypt cautiously welcomed the agreement between Kenya and Ethiopia on Nile water, signed in Nairobi this week."
+    },
+    {
+      "id": "s1-nyt",
+      "group": "S1",
+      "publisher": "nyt",
+      "hours": 7,
+      "title": "Museum returns ancient bronze statues to Nigeria",
+      "excerpt": "A London museum handed back bronze sculptures looted from Benin City in the nineteenth century."
+    },
+    {
+      "id": "s2-cbs",
+      "group": "S2",
+      "publisher": "cbs",
+      "hours": 14,
+      "title": "Record crowd watches women's football final in Sydney",
+      "excerpt": "More than 80,000 fans packed the stadium in Sydney for the final, a record for a women's match in Australia."
+    }
+  ]
+}

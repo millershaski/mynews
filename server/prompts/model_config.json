@@ -1,0 +1,15 @@
+{
+  "provider": "Google Gemini (Generative Language API, v1beta generateContent)",
+  "model": "gemini-3.8-flash",
+  "fallback_models": ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"],
+  "temperature": 0.2,
+  "max_output_tokens": 4096,
+  "thinking_budget": 0,
+  "thinking_level": "low",
+  "story_prompt_version": "story_analysis_v1",
+  "story_prompt_file": "story_analysis_v1.txt",
+  "explore_prompt_version": "explore_pick_v2",
+  "explore_prompt_file": "explore_pick_v2.txt",
+  "max_articles_per_story_prompt": 12,
+  "max_excerpt_chars_in_prompt": 600
+}

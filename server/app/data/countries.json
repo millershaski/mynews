@@ -1,0 +1,1381 @@
+{
+ "AE": {
+  "name": "United Arab Emirates",
+  "aliases": [
+   "United Arab Emirates"
+  ],
+  "guardian_tag": "world/united-arab-emirates"
+ },
+ "AF": {
+  "name": "Afghanistan",
+  "aliases": [
+   "Afghanistan",
+   "Afghan",
+   "Kabul"
+  ],
+  "guardian_tag": "world/afghanistan"
+ },
+ "AL": {
+  "name": "Albania",
+  "aliases": [
+   "Albania"
+  ],
+  "guardian_tag": "world/albania"
+ },
+ "AM": {
+  "name": "Armenia",
+  "aliases": [
+   "Armenia"
+  ],
+  "guardian_tag": "world/armenia"
+ },
+ "AO": {
+  "name": "Angola",
+  "aliases": [
+   "Angola"
+  ],
+  "guardian_tag": "world/angola"
+ },
+ "AQ": {
+  "name": "Antarctica",
+  "aliases": [
+   "Antarctica"
+  ],
+  "guardian_tag": "world/antarctica"
+ },
+ "AR": {
+  "name": "Argentina",
+  "aliases": [
+   "Argentina",
+   "Argentine",
+   "Argentinian",
+   "Buenos Aires"
+  ],
+  "guardian_tag": "world/argentina"
+ },
+ "AT": {
+  "name": "Austria",
+  "aliases": [
+   "Austria"
+  ],
+  "guardian_tag": "world/austria"
+ },
+ "AU": {
+  "name": "Australia",
+  "aliases": [
+   "Australia",
+   "Australian",
+   "Australians",
+   "Canberra",
+   "Sydney"
+  ],
+  "guardian_tag": "australia-news/australia-news"
+ },
+ "AZ": {
+  "name": "Azerbaijan",
+  "aliases": [
+   "Azerbaijan"
+  ],
+  "guardian_tag": "world/azerbaijan"
+ },
+ "BA": {
+  "name": "Bosnia and Herzegovina",
+  "aliases": [
+   "Bosnia and Herzegovina",
+   "Bosnia and Herz."
+  ],
+  "guardian_tag": "world/bosnia-and-herzegovina"
+ },
+ "BD": {
+  "name": "Bangladesh",
+  "aliases": [
+   "Bangladesh"
+  ],
+  "guardian_tag": "world/bangladesh"
+ },
+ "BE": {
+  "name": "Belgium",
+  "aliases": [
+   "Belgium"
+  ],
+  "guardian_tag": "world/belgium"
+ },
+ "BF": {
+  "name": "Burkina Faso",
+  "aliases": [
+   "Burkina Faso"
+  ],
+  "guardian_tag": "world/burkina-faso"
+ },
+ "BG": {
+  "name": "Bulgaria",
+  "aliases": [
+   "Bulgaria"
+  ],
+  "guardian_tag": "world/bulgaria"
+ },
+ "BI": {
+  "name": "Burundi",
+  "aliases": [
+   "Burundi"
+  ],
+  "guardian_tag": "world/burundi"
+ },
+ "BJ": {
+  "name": "Benin",
+  "aliases": [
+   "Benin"
+  ],
+  "guardian_tag": "world/benin"
+ },
+ "BN": {
+  "name": "Brunei",
+  "aliases": [
+   "Brunei",
+   "Brunei Darussalam"
+  ],
+  "guardian_tag": "world/brunei"
+ },
+ "BO": {
+  "name": "Bolivia",
+  "aliases": [
+   "Bolivia"
+  ],
+  "guardian_tag": "world/bolivia"
+ },
+ "BR": {
+  "name": "Brazil",
+  "aliases": [
+   "Brazil",
+   "Brazilian",
+   "Brasília"
+  ],
+  "guardian_tag": "world/brazil"
+ },
+ "BS": {
+  "name": "The Bahamas",
+  "aliases": [
+   "The Bahamas",
+   "Bahamas"
+  ],
+  "guardian_tag": "world/the-bahamas"
+ },
+ "BT": {
+  "name": "Bhutan",
+  "aliases": [
+   "Bhutan"
+  ],
+  "guardian_tag": "world/bhutan"
+ },
+ "BW": {
+  "name": "Botswana",
+  "aliases": [
+   "Botswana"
+  ],
+  "guardian_tag": "world/botswana"
+ },
+ "BY": {
+  "name": "Belarus",
+  "aliases": [
+   "Belarus"
+  ],
+  "guardian_tag": "world/belarus"
+ },
+ "BZ": {
+  "name": "Belize",
+  "aliases": [
+   "Belize"
+  ],
+  "guardian_tag": "world/belize"
+ },
+ "CA": {
+  "name": "Canada",
+  "aliases": [
+   "Canada",
+   "Canadian",
+   "Canadians",
+   "Ottawa"
+  ],
+  "guardian_tag": "world/canada"
+ },
+ "CD": {
+  "name": "Democratic Republic of the Congo",
+  "aliases": [
+   "Democratic Republic of the Congo",
+   "Dem. Rep. Congo",
+   "DR Congo",
+   "DRC",
+   "Kinshasa"
+  ],
+  "guardian_tag": "world/democratic-republic-of-the-congo"
+ },
+ "CF": {
+  "name": "Central African Republic",
+  "aliases": [
+   "Central African Republic",
+   "Central African Rep."
+  ],
+  "guardian_tag": "world/central-african-republic"
+ },
+ "CG": {
+  "name": "Republic of the Congo",
+  "aliases": [
+   "Republic of the Congo",
+   "Congo"
+  ],
+  "guardian_tag": "world/republic-of-the-congo"
+ },
+ "CH": {
+  "name": "Switzerland",
+  "aliases": [
+   "Switzerland",
+   "Swiss",
+   "Geneva",
+   "Zurich"
+  ],
+  "guardian_tag": "world/switzerland"
+ },
+ "CI": {
+  "name": "Ivory Coast",
+  "aliases": [
+   "Ivory Coast",
+   "Côte d'Ivoire"
+  ],
+  "guardian_tag": "world/ivory-coast"
+ },
+ "CL": {
+  "name": "Chile",
+  "aliases": [
+   "Chile"
+  ],
+  "guardian_tag": "world/chile"
+ },
+ "CM": {
+  "name": "Cameroon",
+  "aliases": [
+   "Cameroon"
+  ],
+  "guardian_tag": "world/cameroon"
+ },
+ "CN": {
+  "name": "People's Republic of China",
+  "aliases": [
+   "People's Republic of China",
+   "China",
+   "Chinese",
+   "Beijing"
+  ],
+  "guardian_tag": "world/people-s-republic-of-china"
+ },
+ "CO": {
+  "name": "Colombia",
+  "aliases": [
+   "Colombia",
+   "Colombian",
+   "Bogotá"
+  ],
+  "guardian_tag": "world/colombia"
+ },
+ "CR": {
+  "name": "Costa Rica",
+  "aliases": [
+   "Costa Rica"
+  ],
+  "guardian_tag": "world/costa-rica"
+ },
+ "CU": {
+  "name": "Cuba",
+  "aliases": [
+   "Cuba",
+   "Cuban",
+   "Havana"
+  ],
+  "guardian_tag": "world/cuba"
+ },
+ "CY": {
+  "name": "Turkish Republic of Northern Cyprus",
+  "aliases": [
+   "Turkish Republic of Northern Cyprus",
+   "N. Cyprus",
+   "Northern Cyprus"
+  ],
+  "guardian_tag": "world/turkish-republic-of-northern-cyprus"
+ },
+ "CZ": {
+  "name": "Czech Republic",
+  "aliases": [
+   "Czech Republic",
+   "Czechia"
+  ],
+  "guardian_tag": "world/czech-republic"
+ },
+ "DE": {
+  "name": "Germany",
+  "aliases": [
+   "Germany",
+   "German",
+   "Germans",
+   "Berlin"
+  ],
+  "guardian_tag": "world/germany"
+ },
+ "DJ": {
+  "name": "Djibouti",
+  "aliases": [
+   "Djibouti"
+  ],
+  "guardian_tag": "world/djibouti"
+ },
+ "DK": {
+  "name": "Denmark",
+  "aliases": [
+   "Denmark"
+  ],
+  "guardian_tag": "world/denmark"
+ },
+ "DO": {
+  "name": "Dominican Republic",
+  "aliases": [
+   "Dominican Republic",
+   "Dominican Rep."
+  ],
+  "guardian_tag": "world/dominican-republic"
+ },
+ "DZ": {
+  "name": "Algeria",
+  "aliases": [
+   "Algeria"
+  ],
+  "guardian_tag": "world/algeria"
+ },
+ "EC": {
+  "name": "Ecuador",
+  "aliases": [
+   "Ecuador"
+  ],
+  "guardian_tag": "world/ecuador"
+ },
+ "EE": {
+  "name": "Estonia",
+  "aliases": [
+   "Estonia"
+  ],
+  "guardian_tag": "world/estonia"
+ },
+ "EG": {
+  "name": "Egypt",
+  "aliases": [
+   "Egypt",
+   "Egyptian",
+   "Cairo"
+  ],
+  "guardian_tag": "world/egypt"
+ },
+ "EH": {
+  "name": "Western Sahara",
+  "aliases": [
+   "Western Sahara",
+   "W. Sahara"
+  ],
+  "guardian_tag": "world/western-sahara"
+ },
+ "ER": {
+  "name": "Eritrea",
+  "aliases": [
+   "Eritrea"
+  ],
+  "guardian_tag": "world/eritrea"
+ },
+ "ES": {
+  "name": "Spain",
+  "aliases": [
+   "Spain",
+   "Spanish",
+   "Madrid"
+  ],
+  "guardian_tag": "world/spain"
+ },
+ "ET": {
+  "name": "Ethiopia",
+  "aliases": [
+   "Ethiopia",
+   "Ethiopian",
+   "Addis Ababa"
+  ],
+  "guardian_tag": "world/ethiopia"
+ },
+ "FI": {
+  "name": "Finland",
+  "aliases": [
+   "Finland"
+  ],
+  "guardian_tag": "world/finland"
+ },
+ "FJ": {
+  "name": "Fiji",
+  "aliases": [
+   "Fiji"
+  ],
+  "guardian_tag": "world/fiji"
+ },
+ "FK": {
+  "name": "Falkland Islands",
+  "aliases": [
+   "Falkland Islands",
+   "Falkland Is.",
+   "Falkland Islands / Malvinas"
+  ],
+  "guardian_tag": "world/falkland-islands"
+ },
+ "FR": {
+  "name": "France",
+  "aliases": [
+   "France",
+   "French",
+   "Paris"
+  ],
+  "guardian_tag": "world/france"
+ },
+ "GA": {
+  "name": "Gabon",
+  "aliases": [
+   "Gabon"
+  ],
+  "guardian_tag": "world/gabon"
+ },
+ "GB": {
+  "name": "United Kingdom",
+  "aliases": [
+   "United Kingdom",
+   "Britain",
+   "British",
+   "UK",
+   "England",
+   "Scotland",
+   "Wales",
+   "London"
+  ],
+  "guardian_tag": "uk/uk"
+ },
+ "GE": {
+  "name": "Georgia",
+  "aliases": [
+   "Georgia"
+  ],
+  "guardian_tag": "world/georgia"
+ },
+ "GH": {
+  "name": "Ghana",
+  "aliases": [
+   "Ghana"
+  ],
+  "guardian_tag": "world/ghana"
+ },
+ "GL": {
+  "name": "Greenland",
+  "aliases": [
+   "Greenland"
+  ],
+  "guardian_tag": "world/greenland"
+ },
+ "GM": {
+  "name": "The Gambia",
+  "aliases": [
+   "The Gambia",
+   "Gambia"
+  ],
+  "guardian_tag": "world/the-gambia"
+ },
+ "GN": {
+  "name": "Guinea",
+  "aliases": [
+   "Guinea"
+  ],
+  "guardian_tag": "world/guinea"
+ },
+ "GQ": {
+  "name": "Equatorial Guinea",
+  "aliases": [
+   "Equatorial Guinea",
+   "Eq. Guinea"
+  ],
+  "guardian_tag": "world/equatorial-guinea"
+ },
+ "GR": {
+  "name": "Greece",
+  "aliases": [
+   "Greece",
+   "Greek",
+   "Athens"
+  ],
+  "guardian_tag": "world/greece"
+ },
+ "GT": {
+  "name": "Guatemala",
+  "aliases": [
+   "Guatemala"
+  ],
+  "guardian_tag": "world/guatemala"
+ },
+ "GW": {
+  "name": "Guinea-Bissau",
+  "aliases": [
+   "Guinea-Bissau"
+  ],
+  "guardian_tag": "world/guinea-bissau"
+ },
+ "GY": {
+  "name": "Guyana",
+  "aliases": [
+   "Guyana"
+  ],
+  "guardian_tag": "world/guyana"
+ },
+ "HN": {
+  "name": "Honduras",
+  "aliases": [
+   "Honduras"
+  ],
+  "guardian_tag": "world/honduras"
+ },
+ "HR": {
+  "name": "Croatia",
+  "aliases": [
+   "Croatia"
+  ],
+  "guardian_tag": "world/croatia"
+ },
+ "HT": {
+  "name": "Haiti",
+  "aliases": [
+   "Haiti"
+  ],
+  "guardian_tag": "world/haiti"
+ },
+ "HU": {
+  "name": "Hungary",
+  "aliases": [
+   "Hungary"
+  ],
+  "guardian_tag": "world/hungary"
+ },
+ "ID": {
+  "name": "Indonesia",
+  "aliases": [
+   "Indonesia",
+   "Indonesian",
+   "Jakarta"
+  ],
+  "guardian_tag": "world/indonesia"
+ },
+ "IE": {
+  "name": "Ireland",
+  "aliases": [
+   "Ireland",
+   "Irish",
+   "Dublin"
+  ],
+  "guardian_tag": "world/ireland"
+ },
+ "IL": {
+  "name": "Israel",
+  "aliases": [
+   "Israel",
+   "Israeli",
+   "Israelis",
+   "Jerusalem",
+   "Tel Aviv"
+  ],
+  "guardian_tag": "world/israel"
+ },
+ "IN": {
+  "name": "India",
+  "aliases": [
+   "India",
+   "Indian",
+   "New Delhi"
+  ],
+  "guardian_tag": "world/india"
+ },
+ "IQ": {
+  "name": "Iraq",
+  "aliases": [
+   "Iraq",
+   "Iraqi",
+   "Baghdad"
+  ],
+  "guardian_tag": "world/iraq"
+ },
+ "IR": {
+  "name": "Iran",
+  "aliases": [
+   "Iran",
+   "Iranian",
+   "Tehran"
+  ],
+  "guardian_tag": "world/iran"
+ },
+ "IS": {
+  "name": "Iceland",
+  "aliases": [
+   "Iceland"
+  ],
+  "guardian_tag": "world/iceland"
+ },
+ "IT": {
+  "name": "Italy",
+  "aliases": [
+   "Italy",
+   "Italian",
+   "Rome"
+  ],
+  "guardian_tag": "world/italy"
+ },
+ "JM": {
+  "name": "Jamaica",
+  "aliases": [
+   "Jamaica"
+  ],
+  "guardian_tag": "world/jamaica"
+ },
+ "JO": {
+  "name": "Jordan",
+  "aliases": [
+   "Jordan"
+  ],
+  "guardian_tag": "world/jordan"
+ },
+ "JP": {
+  "name": "Japan",
+  "aliases": [
+   "Japan",
+   "Japanese",
+   "Tokyo"
+  ],
+  "guardian_tag": "world/japan"
+ },
+ "KE": {
+  "name": "Kenya",
+  "aliases": [
+   "Kenya",
+   "Kenyan",
+   "Nairobi"
+  ],
+  "guardian_tag": "world/kenya"
+ },
+ "KG": {
+  "name": "Kyrgyzstan",
+  "aliases": [
+   "Kyrgyzstan"
+  ],
+  "guardian_tag": "world/kyrgyzstan"
+ },
+ "KH": {
+  "name": "Cambodia",
+  "aliases": [
+   "Cambodia"
+  ],
+  "guardian_tag": "world/cambodia"
+ },
+ "KP": {
+  "name": "North Korea",
+  "aliases": [
+   "North Korea",
+   "Dem. Rep. Korea",
+   "North Korean",
+   "Pyongyang"
+  ],
+  "guardian_tag": "world/north-korea"
+ },
+ "KR": {
+  "name": "South Korea",
+  "aliases": [
+   "South Korea",
+   "Republic of Korea",
+   "South Korean",
+   "Seoul"
+  ],
+  "guardian_tag": "world/south-korea"
+ },
+ "KW": {
+  "name": "Kuwait",
+  "aliases": [
+   "Kuwait"
+  ],
+  "guardian_tag": "world/kuwait"
+ },
+ "KZ": {
+  "name": "Kazakhstan",
+  "aliases": [
+   "Kazakhstan"
+  ],
+  "guardian_tag": "world/kazakhstan"
+ },
+ "LA": {
+  "name": "Laos",
+  "aliases": [
+   "Laos",
+   "Lao PDR"
+  ],
+  "guardian_tag": "world/laos"
+ },
+ "LB": {
+  "name": "Lebanon",
+  "aliases": [
+   "Lebanon",
+   "Lebanese",
+   "Beirut"
+  ],
+  "guardian_tag": "world/lebanon"
+ },
+ "LK": {
+  "name": "Sri Lanka",
+  "aliases": [
+   "Sri Lanka"
+  ],
+  "guardian_tag": "world/sri-lanka"
+ },
+ "LR": {
+  "name": "Liberia",
+  "aliases": [
+   "Liberia"
+  ],
+  "guardian_tag": "world/liberia"
+ },
+ "LS": {
+  "name": "Lesotho",
+  "aliases": [
+   "Lesotho"
+  ],
+  "guardian_tag": "world/lesotho"
+ },
+ "LT": {
+  "name": "Lithuania",
+  "aliases": [
+   "Lithuania"
+  ],
+  "guardian_tag": "world/lithuania"
+ },
+ "LU": {
+  "name": "Luxembourg",
+  "aliases": [
+   "Luxembourg"
+  ],
+  "guardian_tag": "world/luxembourg"
+ },
+ "LV": {
+  "name": "Latvia",
+  "aliases": [
+   "Latvia"
+  ],
+  "guardian_tag": "world/latvia"
+ },
+ "LY": {
+  "name": "Libya",
+  "aliases": [
+   "Libya"
+  ],
+  "guardian_tag": "world/libya"
+ },
+ "MA": {
+  "name": "Morocco",
+  "aliases": [
+   "Morocco"
+  ],
+  "guardian_tag": "world/morocco"
+ },
+ "MD": {
+  "name": "Moldova",
+  "aliases": [
+   "Moldova"
+  ],
+  "guardian_tag": "world/moldova"
+ },
+ "ME": {
+  "name": "Montenegro",
+  "aliases": [
+   "Montenegro"
+  ],
+  "guardian_tag": "world/montenegro"
+ },
+ "MG": {
+  "name": "Madagascar",
+  "aliases": [
+   "Madagascar"
+  ],
+  "guardian_tag": "world/madagascar"
+ },
+ "MK": {
+  "name": "North Macedonia",
+  "aliases": [
+   "North Macedonia"
+  ],
+  "guardian_tag": "world/north-macedonia"
+ },
+ "ML": {
+  "name": "Mali",
+  "aliases": [
+   "Mali"
+  ],
+  "guardian_tag": "world/mali"
+ },
+ "MM": {
+  "name": "Myanmar",
+  "aliases": [
+   "Myanmar"
+  ],
+  "guardian_tag": "world/myanmar"
+ },
+ "MN": {
+  "name": "Mongolia",
+  "aliases": [
+   "Mongolia"
+  ],
+  "guardian_tag": "world/mongolia"
+ },
+ "MR": {
+  "name": "Mauritania",
+  "aliases": [
+   "Mauritania"
+  ],
+  "guardian_tag": "world/mauritania"
+ },
+ "MW": {
+  "name": "Malawi",
+  "aliases": [
+   "Malawi"
+  ],
+  "guardian_tag": "world/malawi"
+ },
+ "MX": {
+  "name": "Mexico",
+  "aliases": [
+   "Mexico",
+   "Mexican",
+   "Mexico City"
+  ],
+  "guardian_tag": "world/mexico"
+ },
+ "MY": {
+  "name": "Malaysia",
+  "aliases": [
+   "Malaysia"
+  ],
+  "guardian_tag": "world/malaysia"
+ },
+ "MZ": {
+  "name": "Mozambique",
+  "aliases": [
+   "Mozambique"
+  ],
+  "guardian_tag": "world/mozambique"
+ },
+ "NA": {
+  "name": "Namibia",
+  "aliases": [
+   "Namibia"
+  ],
+  "guardian_tag": "world/namibia"
+ },
+ "NC": {
+  "name": "New Caledonia",
+  "aliases": [
+   "New Caledonia"
+  ],
+  "guardian_tag": "world/new-caledonia"
+ },
+ "NE": {
+  "name": "Niger",
+  "aliases": [
+   "Niger"
+  ],
+  "guardian_tag": "world/niger"
+ },
+ "NG": {
+  "name": "Nigeria",
+  "aliases": [
+   "Nigeria",
+   "Nigerian",
+   "Lagos",
+   "Abuja"
+  ],
+  "guardian_tag": "world/nigeria"
+ },
+ "NI": {
+  "name": "Nicaragua",
+  "aliases": [
+   "Nicaragua"
+  ],
+  "guardian_tag": "world/nicaragua"
+ },
+ "NL": {
+  "name": "Netherlands",
+  "aliases": [
+   "Netherlands",
+   "Dutch",
+   "Amsterdam"
+  ],
+  "guardian_tag": "world/netherlands"
+ },
+ "NO": {
+  "name": "Norway",
+  "aliases": [
+   "Norway",
+   "Norwegian",
+   "Oslo"
+  ],
+  "guardian_tag": "world/norway"
+ },
+ "NP": {
+  "name": "Nepal",
+  "aliases": [
+   "Nepal"
+  ],
+  "guardian_tag": "world/nepal"
+ },
+ "NZ": {
+  "name": "New Zealand",
+  "aliases": [
+   "New Zealand",
+   "Wellington"
+  ],
+  "guardian_tag": "world/new-zealand"
+ },
+ "OM": {
+  "name": "Oman",
+  "aliases": [
+   "Oman"
+  ],
+  "guardian_tag": "world/oman"
+ },
+ "PA": {
+  "name": "Panama",
+  "aliases": [
+   "Panama"
+  ],
+  "guardian_tag": "world/panama"
+ },
+ "PE": {
+  "name": "Peru",
+  "aliases": [
+   "Peru"
+  ],
+  "guardian_tag": "world/peru"
+ },
+ "PG": {
+  "name": "Papua New Guinea",
+  "aliases": [
+   "Papua New Guinea"
+  ],
+  "guardian_tag": "world/papua-new-guinea"
+ },
+ "PH": {
+  "name": "Philippines",
+  "aliases": [
+   "Philippines",
+   "Philippine",
+   "Filipino",
+   "Manila"
+  ],
+  "guardian_tag": "world/philippines"
+ },
+ "PK": {
+  "name": "Pakistan",
+  "aliases": [
+   "Pakistan",
+   "Pakistani",
+   "Islamabad"
+  ],
+  "guardian_tag": "world/pakistan"
+ },
+ "PL": {
+  "name": "Poland",
+  "aliases": [
+   "Poland",
+   "Polish",
+   "Warsaw"
+  ],
+  "guardian_tag": "world/poland"
+ },
+ "PR": {
+  "name": "Puerto Rico",
+  "aliases": [
+   "Puerto Rico"
+  ],
+  "guardian_tag": "world/puerto-rico"
+ },
+ "PS": {
+  "name": "Palestine",
+  "aliases": [
+   "Palestine",
+   "Palestinian",
+   "Palestinians",
+   "Gaza",
+   "West Bank"
+  ],
+  "guardian_tag": "world/palestine"
+ },
+ "PT": {
+  "name": "Portugal",
+  "aliases": [
+   "Portugal"
+  ],
+  "guardian_tag": "world/portugal"
+ },
+ "PY": {
+  "name": "Paraguay",
+  "aliases": [
+   "Paraguay"
+  ],
+  "guardian_tag": "world/paraguay"
+ },
+ "QA": {
+  "name": "Qatar",
+  "aliases": [
+   "Qatar"
+  ],
+  "guardian_tag": "world/qatar"
+ },
+ "RO": {
+  "name": "Romania",
+  "aliases": [
+   "Romania"
+  ],
+  "guardian_tag": "world/romania"
+ },
+ "RS": {
+  "name": "Serbia",
+  "aliases": [
+   "Serbia"
+  ],
+  "guardian_tag": "world/serbia"
+ },
+ "RU": {
+  "name": "Russia",
+  "aliases": [
+   "Russia",
+   "Russian Federation",
+   "Russian",
+   "Russians",
+   "Moscow",
+   "Kremlin"
+  ],
+  "guardian_tag": "world/russia"
+ },
+ "RW": {
+  "name": "Rwanda",
+  "aliases": [
+   "Rwanda"
+  ],
+  "guardian_tag": "world/rwanda"
+ },
+ "SA": {
+  "name": "Saudi Arabia",
+  "aliases": [
+   "Saudi Arabia",
+   "Saudi",
+   "Riyadh"
+  ],
+  "guardian_tag": "world/saudi-arabia"
+ },
+ "SB": {
+  "name": "Solomon Islands",
+  "aliases": [
+   "Solomon Islands",
+   "Solomon Is."
+  ],
+  "guardian_tag": "world/solomon-islands"
+ },
+ "SD": {
+  "name": "Sudan",
+  "aliases": [
+   "Sudan",
+   "Sudanese",
+   "Khartoum"
+  ],
+  "guardian_tag": "world/sudan"
+ },
+ "SE": {
+  "name": "Sweden",
+  "aliases": [
+   "Sweden",
+   "Swedish",
+   "Stockholm"
+  ],
+  "guardian_tag": "world/sweden"
+ },
+ "SI": {
+  "name": "Slovenia",
+  "aliases": [
+   "Slovenia"
+  ],
+  "guardian_tag": "world/slovenia"
+ },
+ "SK": {
+  "name": "Slovakia",
+  "aliases": [
+   "Slovakia"
+  ],
+  "guardian_tag": "world/slovakia"
+ },
+ "SL": {
+  "name": "Sierra Leone",
+  "aliases": [
+   "Sierra Leone"
+  ],
+  "guardian_tag": "world/sierra-leone"
+ },
+ "SN": {
+  "name": "Senegal",
+  "aliases": [
+   "Senegal"
+  ],
+  "guardian_tag": "world/senegal"
+ },
+ "SO": {
+  "name": "Somalia",
+  "aliases": [
+   "Somalia"
+  ],
+  "guardian_tag": "world/somalia"
+ },
+ "SR": {
+  "name": "Suriname",
+  "aliases": [
+   "Suriname"
+  ],
+  "guardian_tag": "world/suriname"
+ },
+ "SS": {
+  "name": "South Sudan",
+  "aliases": [
+   "South Sudan",
+   "S. Sudan"
+  ],
+  "guardian_tag": "world/south-sudan"
+ },
+ "SV": {
+  "name": "El Salvador",
+  "aliases": [
+   "El Salvador"
+  ],
+  "guardian_tag": "world/el-salvador"
+ },
+ "SY": {
+  "name": "Syria",
+  "aliases": [
+   "Syria",
+   "Syrian",
+   "Damascus"
+  ],
+  "guardian_tag": "world/syria"
+ },
+ "SZ": {
+  "name": "Eswatini",
+  "aliases": [
+   "Eswatini",
+   "eSwatini",
+   "Kingdom of eSwatini"
+  ],
+  "guardian_tag": "world/eswatini"
+ },
+ "TD": {
+  "name": "Chad",
+  "aliases": [
+   "Chad"
+  ],
+  "guardian_tag": "world/chad"
+ },
+ "TF": {
+  "name": "French Southern and Antarctic Lands",
+  "aliases": [
+   "French Southern and Antarctic Lands",
+   "Fr. S. Antarctic Lands"
+  ],
+  "guardian_tag": "world/french-southern-and-antarctic-lands"
+ },
+ "TG": {
+  "name": "Togo",
+  "aliases": [
+   "Togo"
+  ],
+  "guardian_tag": "world/togo"
+ },
+ "TH": {
+  "name": "Thailand",
+  "aliases": [
+   "Thailand"
+  ],
+  "guardian_tag": "world/thailand"
+ },
+ "TJ": {
+  "name": "Tajikistan",
+  "aliases": [
+   "Tajikistan"
+  ],
+  "guardian_tag": "world/tajikistan"
+ },
+ "TL": {
+  "name": "East Timor",
+  "aliases": [
+   "East Timor",
+   "Timor-Leste"
+  ],
+  "guardian_tag": "world/east-timor"
+ },
+ "TM": {
+  "name": "Turkmenistan",
+  "aliases": [
+   "Turkmenistan"
+  ],
+  "guardian_tag": "world/turkmenistan"
+ },
+ "TN": {
+  "name": "Tunisia",
+  "aliases": [
+   "Tunisia"
+  ],
+  "guardian_tag": "world/tunisia"
+ },
+ "TR": {
+  "name": "Turkey",
+  "aliases": [
+   "Turkey",
+   "Turkish",
+   "Türkiye",
+   "Ankara",
+   "Istanbul"
+  ],
+  "guardian_tag": "world/turkey"
+ },
+ "TT": {
+  "name": "Trinidad and Tobago",
+  "aliases": [
+   "Trinidad and Tobago"
+  ],
+  "guardian_tag": "world/trinidad-and-tobago"
+ },
+ "TW": {
+  "name": "Taiwan",
+  "aliases": [
+   "Taiwan",
+   "Taiwanese",
+   "Taipei"
+  ],
+  "guardian_tag": "world/taiwan"
+ },
+ "TZ": {
+  "name": "Tanzania",
+  "aliases": [
+   "Tanzania"
+  ],
+  "guardian_tag": "world/tanzania"
+ },
+ "UA": {
+  "name": "Ukraine",
+  "aliases": [
+   "Ukraine",
+   "Ukrainian",
+   "Ukrainians",
+   "Kyiv"
+  ],
+  "guardian_tag": "world/ukraine"
+ },
+ "UG": {
+  "name": "Uganda",
+  "aliases": [
+   "Uganda"
+  ],
+  "guardian_tag": "world/uganda"
+ },
+ "US": {
+  "name": "United States of America",
+  "aliases": [
+   "United States of America",
+   "United States",
+   "U.S.",
+   "America",
+   "American",
+   "Americans",
+   "Washington"
+  ],
+  "guardian_tag": "us-news/us-news"
+ },
+ "UY": {
+  "name": "Uruguay",
+  "aliases": [
+   "Uruguay"
+  ],
+  "guardian_tag": "world/uruguay"
+ },
+ "UZ": {
+  "name": "Uzbekistan",
+  "aliases": [
+   "Uzbekistan"
+  ],
+  "guardian_tag": "world/uzbekistan"
+ },
+ "VE": {
+  "name": "Venezuela",
+  "aliases": [
+   "Venezuela",
+   "Venezuelan",
+   "Caracas"
+  ],
+  "guardian_tag": "world/venezuela"
+ },
+ "VN": {
+  "name": "Vietnam",
+  "aliases": [
+   "Vietnam",
+   "Vietnamese",
+   "Hanoi"
+  ],
+  "guardian_tag": "world/vietnam"
+ },
+ "VU": {
+  "name": "Vanuatu",
+  "aliases": [
+   "Vanuatu"
+  ],
+  "guardian_tag": "world/vanuatu"
+ },
+ "XK": {
+  "name": "Kosovo",
+  "aliases": [
+   "Kosovo"
+  ],
+  "guardian_tag": "world/kosovo"
+ },
+ "YE": {
+  "name": "Yemen",
+  "aliases": [
+   "Yemen"
+  ],
+  "guardian_tag": "world/yemen"
+ },
+ "ZA": {
+  "name": "South Africa",
+  "aliases": [
+   "South Africa",
+   "South African",
+   "Johannesburg",
+   "Pretoria"
+  ],
+  "guardian_tag": "world/south-africa"
+ },
+ "ZM": {
+  "name": "Zambia",
+  "aliases": [
+   "Zambia"
+  ],
+  "guardian_tag": "world/zambia"
+ },
+ "ZW": {
+  "name": "Zimbabwe",
+  "aliases": [
+   "Zimbabwe"
+  ],
+  "guardian_tag": "world/zimbabwe"
+ }
+}

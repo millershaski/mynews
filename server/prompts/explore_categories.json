@@ -1,0 +1,22 @@
+{
+  "all": {
+    "label": "All",
+    "guardian_section": null,
+    "rule": "Any significant news or feature story about the country."
+  },
+  "feel_good": {
+    "label": "Feel good",
+    "guardian_section": null,
+    "rule": "An uplifting, hopeful or heart-warming story: kindness, recovery, achievement, discovery, conservation success, culture or community. Exclude stories whose main subject is death, war, disaster, crime, abuse or political conflict."
+  },
+  "science": {
+    "label": "Science",
+    "guardian_section": "science",
+    "rule": "A story whose main subject is science: research findings, space, nature and wildlife science, medicine and health research, climate or earth science."
+  },
+  "technology": {
+    "label": "Technology",
+    "guardian_section": "technology",
+    "rule": "A story whose main subject is technology: computing, the internet, AI, gadgets, telecoms, engineering, tech companies or digital policy."
+  }
+}
