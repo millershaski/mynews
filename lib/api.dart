@@ -6,10 +6,13 @@ import 'package:http/http.dart' as http;
 
 import 'models.dart';
 
-/// Base URL of the My News API, injected at build time:
-///   flutter build apk --dart-define=API_BASE_URL=https://my-news-api.onrender.com
+/// Base URL of the My News API. Defaults to the deployed beta server; override at build time:
+///   flutter build apk --dart-define=API_BASE_URL=http://10.0.2.2:8000
 /// The app never holds any API keys; every credential lives on the server.
-const String apiBaseUrl = String.fromEnvironment('API_BASE_URL');
+const String apiBaseUrl = String.fromEnvironment(
+  'API_BASE_URL',
+  defaultValue: 'https://my-news-api-0jg9.onrender.com',
+);
 
 class ApiException implements Exception {
   final String message;
