@@ -150,6 +150,40 @@ def test_category_with_a_guardian_section_restricts_the_search(session_factory, 
     assert '"Japan"' in g.requests[0]["q"]
 
 
+def test_categories_with_keywords_search_keywords_and_several_pages(session_factory, settings, fake_ai):
+    class Paged(Guardian):
+        def handler(self, request):
+            if request.url.host == "web.archive.org":
+                return super().handler(request)
+            self.requests.append(dict(request.url.params))
+            page = int(request.url.params["page"])
+            results = [_result(page * 10 + i, f"Japan story {page}-{i}") for i in range(1, 4)]
+            return httpx.Response(200, json={"response": {"status": "ok", "pages": 5, "results": results}})
+
+    g = Paged()
+    _explore(session_factory, settings, g, fake_ai, category="feel_good")
+    keyword_calls = [r for r in g.requests if " AND " in r.get("q", "")]
+    assert [r["page"] for r in keyword_calls] == ["1", "2", "3"]  # capped at MAX_PAGES though 5 exist
+    assert '"Japan"' in keyword_calls[0]["q"] and "kindness" in keyword_calls[0]["q"]
+    assert len(g.requests) == 6  # keyword search + country tag search, three pages each
+
+    g = Paged()
+    _explore(session_factory, settings, g, fake_ai, category="all")
+    assert {r["page"] for r in g.requests} == {"1"}  # no keywords: unchanged single page
+
+
+def test_keyword_matches_lead_the_candidate_list(session_factory, settings, fake_ai):
+    _explore(session_factory, settings, Guardian(), fake_ai, category="feel_good")
+    text = _picks(fake_ai)[0]["user_text"]
+    assert text.index("Volunteers restore") < text.index("Tokyo prepares")
+
+
+def test_more_than_24_candidates_reach_the_ai(session_factory, settings, fake_ai):
+    many = [_result(i, f"Japan festival story {i}") for i in range(1, 31)]
+    _explore(session_factory, settings, Guardian(results=many), fake_ai)
+    assert _picks(fake_ai)[0]["user_text"].count("[C") == 30
+
+
 def test_feel_good_rule_is_sent_to_the_ai(session_factory, settings, fake_ai):
     _explore(session_factory, settings, Guardian(), fake_ai, category="feel_good")
     text = _picks(fake_ai)[0]["user_text"]
@@ -182,12 +216,15 @@ def test_none_suitable_is_stored_with_the_ai_reason(session_factory, settings):
     assert len(_picks(ai)) == 1
 
 
-@pytest.mark.parametrize("category", ["all", "science"])
-def test_ai_failure_falls_back_to_labelled_top_result_and_is_not_stored(session_factory, settings, category):
+@pytest.mark.parametrize(
+    "category, headline",
+    [("all", "Tokyo prepares for the Olympic year"), ("science", "Scientists in Japan map a deep-sea trench")],
+)
+def test_ai_failure_falls_back_to_labelled_top_result_and_is_not_stored(session_factory, settings, category, headline):
     ai = FakeAI(fail=ai_error("provider down"))
     out = _explore(session_factory, settings, Guardian(), ai, category=category)
     assert out["status"] == "relevance_fallback"
-    assert out["pick"]["headline"] == "Tokyo prepares for the Olympic year"
+    assert out["pick"]["headline"] == headline  # science: the keyword-ranked top result
     assert out["ai"] is None  # nothing is presented as AI output
     assert "not been checked by AI" in out["message"]
     with session_factory() as s:

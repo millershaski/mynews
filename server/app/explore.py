@@ -18,6 +18,7 @@ Archive picks are a separate dataset from the rolling 7-day news window (see REA
 """
 import calendar
 import json
+import re
 import threading
 from datetime import datetime, timedelta, timezone
 
@@ -39,7 +40,7 @@ EARLIEST = (1999, 1)
 CURRENT_MONTH_TTL = timedelta(hours=24)
 INCOMPLETE_SOURCES_TTL = timedelta(hours=24)
 FAILURE_COOLDOWN = timedelta(minutes=10)
-MAX_PROMPT_CANDIDATES = 24
+MAX_PROMPT_CANDIDATES = 60
 MAX_TRAIL_CHARS = 400
 GUARDIAN_NAME = "The Guardian"
 ATTRIBUTION = (
@@ -282,13 +283,19 @@ def gather_candidates(session, settings, http, country, cat, year, month, now) -
     return merged, sources, query
 
 
-def _order_candidates(cands: list[guardian.Candidate], code: str) -> list[guardian.Candidate]:
+def _order_candidates(
+    cands: list[guardian.Candidate], code: str, keywords: list[str] | None = None
+) -> list[guardian.Candidate]:
     """Candidates naming the country first, taken in turn from each publisher so none dominates the list.
 
-    Within a publisher the source order is kept (for The Guardian that is its relevance ranking).
+    Within a publisher the source order is kept (for The Guardian that is its relevance ranking), except that
+    candidates matching the category keywords come before those that do not.
     """
     named = [c for c in cands if countries.mentions(f"{c.headline}\n{c.trail_text}", code)]
     rest = [c for c in cands if c not in named]
+    if keywords:
+        pattern = re.compile(r"\b(?:" + "|".join(re.escape(k) for k in keywords) + ")", re.IGNORECASE)
+        named.sort(key=lambda c: not pattern.search(f"{c.headline}\n{c.trail_text}"))
     queues: dict[str, list] = {}
     for c in named:
         queues.setdefault(c.publisher, []).append(c)
@@ -419,7 +426,7 @@ def _generate(session, settings, ai, http, key, country, cat_id, cat, year, mont
         row = _store(session, key, {**clear, **common, "status": "no_candidates"})
         return _row_payload(row, base, country, cat, cached=False)
 
-    cands = _order_candidates(found, country["code"])
+    cands = _order_candidates(found, country["code"], cat.get("keywords"))
     try:
         if not ai.configured:
             raise AIError("GEMINI_API_KEY is not configured")

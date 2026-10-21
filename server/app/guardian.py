@@ -13,6 +13,7 @@ from .timeutil import as_utc
 
 GUARDIAN_SEARCH = "https://content.guardianapis.com/search"
 PAGE_SIZE = 30
+MAX_PAGES = 3  # per search, for categories with keywords
 MIN_TAG_RESULTS = 5  # below this, widen the search with a keyword query
 MAX_QUERY_ALIASES = 4
 
@@ -67,11 +68,15 @@ def _parse(result: dict) -> Candidate | None:
     )
 
 
-def search(client: httpx.Client, api_key: str, *, from_date: str, to_date: str, **filters) -> list[Candidate]:
+def search(
+    client: httpx.Client, api_key: str, *, from_date: str, to_date: str, page: int = 1, **filters
+) -> tuple[list[Candidate], int]:
+    """One page of results plus the total number of pages the Guardian reports for the query."""
     params = {
         "api-key": api_key,
         "from-date": from_date,
         "to-date": to_date,
+        "page": str(page),
         "page-size": str(PAGE_SIZE),
         "order-by": "relevance",
         "show-fields": "trailText,headline,thumbnail",
@@ -88,10 +93,21 @@ def search(client: httpx.Client, api_key: str, *, from_date: str, to_date: str, 
     if resp.status_code >= 400:
         raise GuardianError(f"Guardian API error {resp.status_code}")
     try:
-        results = resp.json()["response"].get("results") or []
-    except (ValueError, KeyError, TypeError) as exc:
+        body = resp.json()["response"]
+        results = body.get("results") or []
+        total_pages = int(body.get("pages") or 1)
+    except (ValueError, KeyError, TypeError, AttributeError) as exc:
         raise GuardianError("unexpected Guardian API response") from exc
-    return [c for c in (_parse(r) for r in results) if c is not None]
+    return [c for c in (_parse(r) for r in results) if c is not None], total_pages
+
+
+def search_pages(client: httpx.Client, api_key: str, *, max_pages: int = 1, **kwargs) -> list[Candidate]:
+    found, page, total = [], 1, 1
+    while page <= min(total, max_pages):
+        batch, total = search(client, api_key, page=page, **kwargs)
+        found += batch
+        page += 1
+    return found
 
 
 def alias_query(country: dict) -> str:
@@ -99,27 +115,54 @@ def alias_query(country: dict) -> str:
     return " OR ".join(f'"{a}"' for a in aliases)
 
 
+def keyword_query(country: dict, keywords: list[str]) -> str:
+    terms = " OR ".join(f'"{k}"' if " " in k else k for k in keywords)
+    return f"({alias_query(country)}) AND ({terms})"
+
+
+def _merge(*groups: list[Candidate]) -> list[Candidate]:
+    seen, out = set(), []
+    for c in (c for g in groups for c in g):
+        if c.id not in seen:
+            seen.add(c.id)
+            out.append(c)
+    return out
+
+
 def find_candidates(
     client: httpx.Client, api_key: str, country: dict, category: dict, year: int, month: int, today: datetime
 ) -> tuple[list[Candidate], str]:
-    """Return (candidates, description of the query used)."""
+    """Return (candidates, description of the query used).
+
+    Categories with keywords get a keyword-boosted search first, so matching stories lead the list, and
+    several pages of every search.
+    """
     from_date, to_date = month_range(year, month, today)
     section = category.get("guardian_section")
+    keywords = category.get("keywords") or []
+    pages = MAX_PAGES if keywords else 1
     q = alias_query(country)
+    base = {"from_date": from_date, "to_date": to_date, "max_pages": pages}
+
+    boosted, desc = [], []
+    if keywords:
+        kq = keyword_query(country, keywords)
+        boosted = search_pages(client, api_key, section=section, q=kq, **base)
+        desc.append(f"keywords q={kq}")
+
     if section:
-        found = search(client, api_key, from_date=from_date, to_date=to_date, section=section, q=q)
+        found = _merge(boosted, search_pages(client, api_key, section=section, q=q, **base))
         for c in found:
             c.category_enforced = True
-        return found, f"section={section} q={q} {from_date}..{to_date}"
+        desc.append(f"section={section} q={q}")
+        return found, f"{' + '.join(desc)} {from_date}..{to_date}"
 
-    found, desc = [], []
+    found = []
     tag = country.get("guardian_tag")
     if tag:
-        found = search(client, api_key, from_date=from_date, to_date=to_date, tag=tag)
+        found = search_pages(client, api_key, tag=tag, **base)
         desc.append(f"tag={tag}")
     if len(found) < MIN_TAG_RESULTS:
-        seen = {c.id for c in found}
-        extra = search(client, api_key, from_date=from_date, to_date=to_date, q=q)
-        found += [c for c in extra if c.id not in seen]
+        found = _merge(found, search_pages(client, api_key, q=q, **base))
         desc.append(f"q={q}")
-    return found, f"{' + '.join(desc)} {from_date}..{to_date}"
+    return _merge(boosted, found), f"{' + '.join(desc)} {from_date}..{to_date}"

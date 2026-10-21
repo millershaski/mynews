@@ -7,16 +7,19 @@
   "feel_good": {
     "label": "Feel good",
     "guardian_section": null,
+    "keywords": ["kindness", "hope", "rescued", "celebrate", "restored", "revival", "recovery", "breakthrough", "volunteers", "charity", "generosity", "inspiring", "triumph", "conservation", "reunited", "heartwarming", "thriving", "festival"],
     "rule": "An uplifting, hopeful or heart-warming story: kindness, recovery, achievement, discovery, conservation success, culture or community. Exclude stories whose main subject is death, war, disaster, crime, abuse or political conflict."
   },
   "science": {
     "label": "Science",
     "guardian_section": "science",
+    "keywords": ["research", "scientists", "study", "discovery", "researchers", "space", "species", "climate", "vaccine", "astronomers", "fossil", "medicine"],
     "rule": "A story whose main subject is science: research findings, space, nature and wildlife science, medicine and health research, climate or earth science."
   },
   "technology": {
     "label": "Technology",
     "guardian_section": "technology",
+    "keywords": ["technology", "artificial intelligence", "software", "internet", "robot", "smartphone", "startup", "cyber", "digital", "semiconductor", "chatbot", "algorithm"],
     "rule": "A story whose main subject is technology: computing, the internet, AI, gadgets, telecoms, engineering, tech companies or digital policy."
   }
 }
